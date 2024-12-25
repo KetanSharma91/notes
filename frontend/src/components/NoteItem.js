@@ -11,7 +11,7 @@ const NoteItem = ({ note, updateNote, triggerPopup }) => {
             <p className="card-text">{note.description}</p>
             <div className="icons">
                 <div className="card-options">
-                    <button onClick={() => { updateNote(note) }}>
+                    <button onClick={() => { console.log("Update button clicked in NoteItem:", note);  updateNote(note) }}>
                         <span className="icon"><i className="i-edit"></i><span className="tooltip">Update</span></span>
                     </button>
                     <button onClick={() => { deleteNote(note._id); triggerPopup("Deleted Note") }}>

@@ -54,12 +54,12 @@ const Notes = ({ triggerPopup, query }) => {
 
     const openModal = () => {
         setIsModalOpen(true);
-        console.log("true");
+        console.log(setIsModalOpen);
     };
 
     const closeModal = () => {
         setIsModalOpen(false);
-        console.log("false");
+        console.log(setIsModalOpen);
     };
 
     return <>
