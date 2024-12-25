@@ -181,11 +181,9 @@ window.onload = function () {
         modal.style.display = "none";
       }
     }
-    if (closeModalBtnFooter) {
 
-      closeModalBtnFooter.onclick = function () {
-        modal.style.display = "none";
-      }
+    closeModalBtnFooter.onclick = function () {
+      modal.style.display = "none";
     }
 
     window.onclick = function (event) {
