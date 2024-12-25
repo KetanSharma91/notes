@@ -63,7 +63,7 @@ const Notes = ({ triggerPopup, query }) => {
     };
 
     return <>
-        <button ref={ref} type="button" className="model-btn d-none" id="openModalBtn" onClick={closeModal}>Launch Modal</button>
+        <button ref={ref} type="button" className="model-btn d-none" id="openModalBtn" onClick={openModal}>Launch Modal</button>
 
         <div id="modal" className={`modal ${!isModalOpen ? "" : "d-none"}`}>
             <div className="container container-cn">
@@ -74,7 +74,7 @@ const Notes = ({ triggerPopup, query }) => {
 
                     <div className="icon-row" id="iconRow" style={{ margin: "10px 15px" }}>
                         <button type="button" disabled={note.etitle.length < 5 || note.edescription.length < 5} className="close-btn" style={{ background: "transparent" }} onClick={handlesubmit}>Update</button>
-                        <button type="button" className="close-btn" id="closeModalBtnFooter" onClick={openModal} ref={refClose} style={{ background: "transparent" }}>Close</button>
+                        <button type="button" className="close-btn" id="closeModalBtnFooter" onClick={closeModal} ref={refClose} style={{ background: "transparent" }}>Close</button>
                     </div>
                 </div>
             </div>
