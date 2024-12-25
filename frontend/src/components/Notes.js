@@ -61,12 +61,11 @@ const Notes = ({ triggerPopup, query }) => {
         setIsModalOpen(false);
         console.log(setIsModalOpen);
     };
-    // {`modal ${isModalOpen ? "" : "d-none"}`}
 
     return <>
-        <button ref={ref} type="button" className="model-btn d-none" id="openModalBtn" onClick={openModal}>Launch Modal</button>
+        <button ref={ref} type="button" className="model-btn" id="openModalBtn" onClick={openModal}>Launch Modal</button>
 
-        {isModalOpen && (<div className='modal'> 
+        <div className={`modal ${isModalOpen ? "" : "d-none"}`}>
             <div className="container container-cn">
                 <div className="note-container">
 
@@ -79,7 +78,7 @@ const Notes = ({ triggerPopup, query }) => {
                     </div>
                 </div>
             </div>
-        </div>)}
+        </div>
 
         <AddNote triggerPopup={triggerPopup} />
 
