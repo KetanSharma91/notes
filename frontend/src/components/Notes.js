@@ -65,7 +65,7 @@ const Notes = ({ triggerPopup, query }) => {
     return <>
         <button ref={ref} type="button" className="model-btn d-none" id="openModalBtn" onClick={openModal}>Launch Modal</button>
 
-        <div id="modal" className={`modal ${!isModalOpen ? "" : "d-none"}`}>
+        <div id="modal" className={`modal ${isModalOpen ? "" : "d-none"}`}>
             <div className="container container-cn">
                 <div className="note-container">
 
